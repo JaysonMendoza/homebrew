@@ -1,0 +1,454 @@
+{
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "ValenciaWorld",
+				"abbreviation": "Valencia",
+				"full": "World of Valencia",
+				"url": "https://github.com/JaysonMendoza/homebrew",
+				"authors": [
+					"JKM Consulting"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1686511252,
+		"dateLastModified": 1686511252
+	},
+	"monster": [
+		{
+			"name": "Ranger Boss",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"wood elf",
+					"elite ranger",
+					"boss"
+				]
+			},
+			"source": "ValenciaWorld",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": " ( 5d8 +  ( 5 * 2 )  )  * 2",
+				"average": 65
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 14,
+			"dex": 19,
+			"con": 15,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"passive": 18,
+			"cr": {
+				"cr": "5",
+				"lair": "6"
+			},
+			"senses": [
+				"Blindsight 30 ft",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elven"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"dex": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+8",
+				"stealth": "+7",
+				"acrobatics": "+7",
+				"insight": "+5"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The ranger boss can two attacks with any combination of it's rapier or longbow. These attacks can be broken up by movement.",
+						"The Ranger Boss' primary tactic is to use a combination of mobility and terrain effects to hamper their opponents. The Mobility, Blindsight, and Darkvision are key to this style of fighting. On terrain that is ideally difficult and environments that obscure their opponents vision the Ranger Boss can freely move and fight while their opponent will struggle."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Rapier +1",
+					"entries": [
+						"{@atk mw} {@hit +7} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d8 + 7}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW"
+			],
+			"environment": [
+				"forest",
+				"hill",
+				"mountain",
+				"swamp"
+			],
+			"actionHeader": [
+				"The ranger has honed their fighting style to favor terrains that are uneven and loaded with obsticles. They fight using magic that obscures vision and use ranged or hit and run attacks to wear their opponents down. They prefer to end their round in stealth.",
+				"The ranger is a known archer and duelist that prefers fighting with a single weapon. "
+			],
+			"bonus": [
+				{
+					"name": "Cunning Action",
+					"entries": [
+						"Quick thinking and agility allow it to move and act quickly. Ranger Boss can take a bonus action on each of its turns in combat. This action can be used only to take the Dash, Disengage, or Hide action."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ranger Boss is a 5th level spellcaster using wisdom as their primary spellcasting attribute. Spells cast should be assumed to have used a 2nd level spell slot."
+					],
+					"daily": {
+						"4": [
+							"{@spell absorb elements|XGE}",
+							"{@spell cure wounds}",
+							"{@spell entangle}",
+							"{@spell fog cloud}",
+							"{@spell hunter's mark}",
+							"{@spell pass without trace}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell minor illusion}",
+								"{@spell mold earth|XGE}"
+							]
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CR"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"trait": [
+				{
+					"name": "Mobile",
+					"entries": [
+						"The Ranger Boss is exceptionally speedy and agile. When it uses a Dash action, difficult terrain doesn't case extra movement that turn. ",
+						"When Ranger Boss makes a melee attack against a creature, it doesn't provide opportunity attacks from that creature for the rest of the turn, regardless of its outcome."
+					]
+				},
+				{
+					"name": "Mask of the Wild (Wood Elf)",
+					"entries": [
+						"Ranger Boss can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+					]
+				},
+				{
+					"name": "Trance (Wood Elf)",
+					"entries": [
+						"Trance. Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Ensnaring Strike",
+					"entries": [
+						"Ranger boss can make a single weapon attack against any target in range. ",
+						"If they hit a writhing mass of thorny vines appears at the point of impact, and the target must succeed on a Strength saving throw or be {@condition restrained} by the magical vines until the spell ends. A Large or larger creature has advantage on this saving throw. If the target succeeds on the save, the vines shrivel away.",
+						"While {@condition restrained} by this effect, the target takes {@damage 1d6} piercing damage at the start of each of its turns. A creature {@condition restrained} by the vines or one that can touch the creature can use its action to make a Strength check against your spell save DC. On a success, the target is freed."
+					]
+				},
+				{
+					"name": "Cast Spell (2 Actions)",
+					"entries": [
+						"Ranger Boss can cast a spell using their legendary action from their spell list. "
+					]
+				},
+				{
+					"name": "Riposte (Legendary Reaction)",
+					"entries": [
+						"The Ranger Boss attempts to read its opponents intent and predict their account. When the ranger is the target of any attack roll they may use their ready weapon to strike their opponent first in attempt to cancel their attack. ",
+						"Using their ready weapon the Ranger Boss makes one attack against the opponent then adds their insight bonus to their armor against that opponent for the reaminder of the round.",
+						"If the opponement may attempt to use a Sleight of Hand (DEX) check opposed by the Ranger Boss Insight (Wis) to counter this effect. If they succeed then their attack gains an additional bonus to attack and damage equal to the difference between the two rolls and the Ranger Boss bonus armor from this ability is canceled for that opponent."
+					]
+				}
+			],
+			"group": [
+				"Boss NPC"
+			],
+			"isNpc": true,
+			"conditionInflict": [
+				"restrained"
+			],
+			"fluff": {
+				"entries": [
+					"Ranger Boss is a template for a boss encounter for a solo enemy. ",
+					"Ranger Boss will attempt to lay a trap as it's lair in a natural setting. If this occurs then the battle should start with the Fog Cloud spell in effect. This spell remains in effect and is a property of the environment. "
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://preview.redd.it/k1who5x0c2v81.jpg?width=564&format=pjpg&auto=webp&v=enabled&s=71117e194955217e826967c0addf4de1a4c8e862"
+						}
+					}
+				]
+			},
+			"damageTagsLegendary": [
+				"N"
+			],
+			"legendaryGroup": {
+				"name": "Ranger's Ambush",
+				"source": "ValenciaWorld"
+			}
+		},
+		{
+			"name": "Captain of Household Guard",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ValenciaWorld",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"special": "85"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+7",
+				"perception": "+5",
+				"investigation": "+9",
+				"insight": "+10"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": {
+				"cr": "3",
+				"lair": "4"
+			},
+			"trait": [
+				{
+					"name": "Inspiring Presence",
+					"entries": [
+						"The captain has drilled his soldiers to work together as a single unit and the troops find their presence inspiring.",
+						"All of their troops gain {@atk mw,rw} {@hit 2} and {@h}  {@damage +2} to damage rolls.",
+						"Should the commander fall in battle all troops must make a {@dc 15} will save or be {@condition frightened}. "
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The captain attacks twice using any weapon it has available."
+					]
+				},
+				{
+					"name": "Razorclaw",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) / {@h}10({@damage 1d10+5}) {@i versatile} slashing damage.",
+						"Razorclaw is a +1 {@item longsword|PHB} and a well recognized household heirloom that is awarded to the current captain of the household guard while they serve. It's a symbol of the leadership and prestiege of the household."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit +6} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW",
+				"THW"
+			],
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/HotDQ/Captain Othelstan.png",
+			"fluff": {
+				"entries": [
+					"A captain of a guard unit protecting some of the household assets. They are considered in a lair if they reside in any protected area where they call for reinforcements in the near proximity."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.pinimg.com/originals/6c/27/01/6c27019de1e543b4c113dd992d7cc2df.jpg"
+						}
+					}
+				]
+			},
+			"legendaryGroup": {
+				"name": "Noble House Protected Territory",
+				"source": "ValenciaWorld"
+			},
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "Command: Guard Formation",
+					"entries": [
+						"The Captain orders the guards present into a specific formation. The Captain may choose which guards will join the formation. All designated guards who hear this order may use their reaction to take a {@action disengage} action and make a normal movement and attempt to get into the formation.",
+						"The troops form a line with shields carriers linked in front and non-shield users in the second rank. Soldiers in this formation have {@quickref Cover|PHB|3||half cover} on attacks that originate from any direction the shield wall is protecting against. The line doesn't need to be straight and can curve so long as every solider with a shield is adjacent. "
+					]
+				},
+				{
+					"name": "Order: Sieze Them!",
+					"entries": [
+						"The guard captain orders a troop in visible range to capture the target. The unit attempting to capture the target can take a shove action towards capturing the target. If the target creature is {@condition prone} then the troop binds their hands and legs leaving them {@condition incapacitated}. Once captured the target remains {@condition incapacitated} until they are freed by a friendly creature who spends their action to unbind them. Attempting to unbind a captured creature will draw an attack of opportunity from any troops within reach. {@i A troop can only recieve one order per round.}"
+					]
+				},
+				{
+					"name": "Order: Press The Attack",
+					"entries": [
+						"The guard captain orders a troop in visible range is ordered to attack the target. The troop may choose make one attack or shove against the target. {@i A troop can only recieve one order per round.}"
+					]
+				}
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Reinforcements Have Arrived! {@recharge 5}",
+					"entries": [
+						"The Captain of Household Guard calls in nearby reinforcements. Add {@dice 1d4} {@creature guard}'s to the encounter."
+					]
+				}
+			],
+			"group": [
+				"Soldier",
+				"Boss"
+			],
+			"attachedItems": [
+				"javelin|phb"
+			],
+			"environment": [
+				"urban"
+			],
+			"shortName": "Guard Captain",
+			"legendaryHeader": [
+				"A captain of a guard unit protecting some of the household assets. They are considered in a lair if they reside in any protected area where they call for reinforcements in the near proximity."
+			],
+			"actionHeader": [
+				"The guard captain will normally play defensive and emphasize the protection of his charge, calling for reinforcements, and coordinating troops."
+			],
+			"damageTags": [
+				"P"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Ranger's Ambush",
+			"regionalEffects": [
+				"The battleground has been prepared as an ambush site by the ranger.",
+				"The battleground is covered by a magical thick fog and is {@quickref Vision and Light|PHB|2||heavily obscured}. There is a hidden traslucent white magic stone around the center of this effect acting as it's source. A player may find this magic stone with a {@bold perception check} at a {@bold DC 15 or 19 if its} {@quickref Vision and Light|PHB|2||heavily obscured} .",
+				"Wind of moderate or greater speed (at least 10 miles per hour) disperses it for {@dice 1d4} rounds.",
+				"The magic stone is disposable and is expended {@italic 24 hours} after activation."
+			],
+			"mythicEncounter": [],
+			"source": "ValenciaWorld",
+			"lairActions": [
+				"The ranger can cast one spell that affects the area of the ambush site when the battle starts as a suprise round action."
+			]
+		},
+		{
+			"name": "Noble House Protected Territory",
+			"lairActions": [
+				"{@underline {@bold Call To Arms}}",
+				"Use a die to record the number of combat rounds. {@italic This will be used to determine when reinforcements are exausted for the purposes of the encounter}.",
+				"On initiative roll 20 (loosing ties) the Captain can call for reinforcements. ",
+				"At the beginning of the next round of combat {@dice 1d4-1} troops of the household guard arrive and join the combat. ",
+				"Starting on the 3rd combat round roll {@dice 1d6}. If the result is less than the combat round number then no further reinforcements close enough to arrive before the end of the battle."
+			],
+			"regionalEffects": [],
+			"mythicEncounter": [],
+			"source": "ValenciaWorld"
+		}
+	]
+}
